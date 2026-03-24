@@ -10,6 +10,7 @@ while true; do
 		mpv siren.mp3 --no-video --really-quiet
 		google_speech -l en-us "BREAKING NEWS... $sentence"
 		last="$current"
+		sudo killall ollama
 	fi
 	sleep 10
 done

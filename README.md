@@ -15,5 +15,5 @@ chmod +x war.sh
 ```
 
 ```
-sudo ./war.sh
+./war.sh
 ```

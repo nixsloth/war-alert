@@ -1,5 +1,6 @@
 #!/bin/bash
 last=""
+sudo echo ""
 while true; do
 	rss=$(curl -s "https://www.bing.com/news/search?q=iran&qft=sortbydate%3d%221%22&form=YFNR&format=rss")
 	title=$(echo "$rss" | xmllint --xpath 'string(//item[1]/title)' - 2>/dev/null)
